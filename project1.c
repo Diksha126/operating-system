@@ -24,6 +24,7 @@ int main()
    }
  else
    {
+    printf("parent process is waiting\n");
     wait(NULL);
     printf("parent process is done\n");
    }
