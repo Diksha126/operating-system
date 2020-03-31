@@ -4,9 +4,9 @@
 int main()
 {
  int pid,n;
- printf("WELCOME TO THE PROGRAM\n");
+ printf("WELCOME TO THE PROGRAM....\n");
  do{
-    printf("ENTER A POSITIVE NUMBER TO RUN!!\n");
+    printf("ENTER A VALID NUMBER TO RUN!!\n");
     scanf("%d",&n);
     }while(n<=0);
  pid=fork();
