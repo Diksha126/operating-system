@@ -4,15 +4,14 @@
 int main()
 {
  int pid,n;
- printf("WELCOME TO THE PROGRAM....\n");
  do{
-    printf("ENTER A VALID NUMBER TO RUN!!\n");
+    printf("ENTER!!\n");
     scanf("%d",&n);
     }while(n<=0);
  pid=fork();
  if(pid==0)
   {
-   printf("child process is running\n");
+   printf("child process \n");
    printf("%d\n",n);
    while(n!=1)
    {
@@ -20,13 +19,10 @@ int main()
    n=(n/2);
    printf("%d\n",n);
    }
-   printf("child process is done\n");
    }
  else
-   {
-    printf("parent process is waiting\n");
+ {
     wait(NULL);
-    printf("parent process is done\n");
-   }
+ }
 }
 
