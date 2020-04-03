@@ -5,7 +5,7 @@ int main()
 {
  int pid,n;
  do{
-    printf("ENTER!!\n");
+    printf("ENTER A VALID NO.!!\n");
     scanf("%d",&n);
     }while(n<=0);
  pid=fork();
@@ -23,6 +23,7 @@ int main()
  else
  {
     wait(NULL);
+    printf("parent process done");
  }
 }
 
